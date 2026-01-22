@@ -33,7 +33,7 @@
       {
   "title": "Cosentino Termomecánica",
   "description": "Landing Page desarrollado para una empresa de termomecánica, enfocado en generar consultas, presentar servicios de forma clara y transmitir confianza profesional.",
-  "image": "/img/foto.jpeg",
+  "image": "./img/foto.jpeg",
   "link": "https://cosentinotermomecanica.com/",
   "buttonText": "Ver sitio"
 }
