@@ -1,0 +1,133 @@
+{
+  "hero": {
+    "title": "Diseño y desarrollo web que convierte visitas en clientes",
+    "subtitle": "Creo landing pages y sitios web rápidos, modernos y optimizados para generar contactos reales y ventas.",
+    "buttonText": "Ver Planes"
+  },
+  "solutions": {
+    "title": "Soluciones pensadas para vender",
+    "description": "No hago solo páginas. Diseño experiencias digitales enfocadas en conversión, velocidad y resultados reales para tu negocio.",
+    "items": [
+      {
+        "title": "Landing Pages",
+        "description": "Páginas optimizadas para campañas publicitarias, enfocadas en captar leads y maximizar conversiones."
+      },
+      {
+        "title": "Sitios Corporativos",
+        "description": "Webs profesionales que transmiten confianza, ordenan tu oferta y posicionan tu marca."
+      },
+      {
+        "title": "E-commerce",
+        "description": "Tiendas online rápidas, escalables y listas para vender desde el primer día."
+      },
+      {
+        "title": "Optimización & UX",
+        "description": "Mejora de experiencia de usuario, estructura, velocidad y rendimiento general del sitio."
+      }
+    ]
+  },
+  "projects": {
+    "title": "Ultimos Proyectos realizados",
+    "description": "Algunos de los trabajos que desarrollé para empresas y negocios.",
+    "items": [
+      {
+  "title": "Cosentino Termomecánica",
+  "description": "Landing Page desarrollado para una empresa de termomecánica, enfocado en generar consultas, presentar servicios de forma clara y transmitir confianza profesional.",
+  "image": "/img/foto.jpeg",
+  "link": "https://cosentinotermomecanica.com/",
+  "buttonText": "Ver sitio"
+}
+
+    ]
+  },
+  "process": {
+    "title": "Cómo trabajo",
+    "steps": [
+      {
+        "title": "Análisis",
+        "description": "Entiendo tu negocio, objetivos y público para definir la mejor estrategia digital."
+      },
+      {
+        "title": "Diseño",
+        "description": "Diseño moderno y estratégico, alineado a tu marca y enfocado en conversión."
+      },
+      {
+        "title": "Desarrollo",
+        "description": "Código limpio, rápido y optimizado para rendimiento y SEO."
+      },
+      {
+        "title": "Entrega",
+        "description": "Publicación del sitio listo para salir a vender y generar contactos."
+      }
+    ]
+  },
+  "pricing": {
+    "title": "Planes y precios",
+    "description": "Opciones flexibles según el tipo de proyecto. Los valores pueden ajustarse según necesidades específicas.",
+    "plans": [
+      {
+        "name": "Landing Básica",
+        "price": "Desde USD 120",
+        "features": [
+          "Diseño moderno",
+          "Estructura enfocada en conversiones",
+          "Responsive",
+          "Carga rápida"
+        ],
+        "buttonText": "Consultar"
+      },
+      {
+        "name": "Web Corporativa",
+        "price": "Desde USD 200",
+        "features": [
+          "Diseño personalizado",
+          "Secciones estratégicas",
+          "SEO básico",
+          "Responsive"
+        ],
+        "buttonText": "Consultar"
+      },
+      {
+        "name": "Web de Conversión Premium",
+        "price": "Desde USD 350",
+        "features": [
+          "Diseño UX estratégico",
+          "Copywriting orientado a ventas",
+          "Estructura optimizada para Google Ads",
+          "Optimización avanzada de velocidad",
+          "Integración con WhatsApp y formularios",
+          "Tracking básico (Meta y Google)",
+          "Acompañamiento post-lanzamiento"
+        ],
+        "buttonText": "Consultar"
+      },
+      {
+        "name": "Proyecto a Medida",
+        "price": "Recomendado",
+        "featured": true,
+        "features": [
+          "Solución 100% personalizada",
+          "Funcionalidades avanzadas",
+          "Arquitectura escalable",
+          "Soporte y mantenimiento continuo"
+        ],
+        "buttonText": "Consultar" 
+         
+        
+      }
+    ]
+  },
+    "cta": {
+  "title": "¿Listo para llevar tu negocio al siguiente nivel?",
+  "buttonText": "Estoy Listo"
+},
+
+  "contact": {
+    "title": "Hablemos de tu proyecto",
+    "whatsapp": "https://wa.me/5491166784500",
+    "email": "gonzalodelvitto17@gmail.com"
+  },
+  "footer": {
+    "text": "© 2026 · Gonzalo Delvitto · Desarrollo Web"
+  }
+}

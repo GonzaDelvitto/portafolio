@@ -1,0 +1,369 @@
+/* =========================
+   RESET & BASE
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: #0b0b12;
+  color: #ffffff;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* =========================
+   VARIABLES
+========================= */
+:root {
+  --bg-main: #0b0b12;
+  --bg-card: #141427;
+  --violet: #6a2cff;
+  --violet-dark: #4b1fd6;
+  --text-muted: #9ca3af;
+  --radius-lg: 1.5rem;
+  --radius-xl: 2rem;
+  --transition: all 0.35s ease;
+}
+
+.bg-violet {
+  background: linear-gradient(135deg, var(--violet), var(--violet-dark));
+}
+
+.text-violet {
+  color: var(--violet);
+}
+
+/* =========================
+   SELECTION
+========================= */
+::selection {
+  background: var(--violet);
+  color: #fff;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+.navbar {
+  position: fixed;
+  inset: 0 0 auto 0;
+  height: 72px;
+  z-index: 40;
+  background: rgba(11, 11, 18, 0.65);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.nav-container {
+  max-width: 1300px;
+  margin: auto;
+  padding: 1.2rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.6rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  color: var(--violet);
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #e5e7eb;
+  position: relative;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--violet);
+  transition: var(--transition);
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/* =========================
+   MOBILE MENU
+========================= */
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  color: white;
+}
+
+.nav-links.open {
+  display: flex;
+}
+
+/* =========================
+   SECTIONS
+========================= */
+section {
+  padding: clamp(4rem, 8vw, 7rem) 1.5rem;
+  contain: layout paint;
+}
+
+/* =========================
+   HERO
+========================= */
+#hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background:
+    radial-gradient(800px 400px at 50% -20%, rgba(106,44,255,0.15), transparent),
+    var(--bg-main);
+}
+
+#hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(600px 300px at 20% 10%, rgba(106,44,255,0.18), transparent),
+    radial-gradient(500px 300px at 80% 60%, rgba(106,44,255,0.12), transparent);
+  z-index: 0;
+  animation: floatBg 12s ease-in-out infinite alternate;
+}
+
+#hero > * {
+  position: relative;
+  z-index: 1;
+}
+
+@keyframes floatBg {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-40px); }
+}
+
+/* =========================
+   TITLES & TEXT
+========================= */
+h1, h2, h3 {
+  letter-spacing: -0.02em;
+}
+
+h1 {
+  font-size: clamp(2.3rem, 6vw, 4rem);
+}
+
+h2 {
+  font-size: clamp(2rem, 5vw, 3rem);
+}
+
+p {
+  color: var(--text-muted);
+  font-size: clamp(0.95rem, 2.5vw, 1rem);
+}
+
+/* =========================
+   BUTTONS
+========================= */
+a,
+button {
+  transition: var(--transition);
+}
+
+a.inline-block:hover {
+  transform: translateY(-4px);
+}
+
+/* =========================
+   CARDS
+========================= */
+.bg-card {
+  background:
+    linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0)),
+    var(--bg-card);
+  border-radius: var(--radius-xl);
+  border: 1px solid rgba(255,255,255,0.05);
+  transition: transform .4s ease, box-shadow .4s ease;
+}
+
+.bg-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 40px 100px rgba(106,44,255,0.35);
+}
+
+/* =========================
+   SOLUTIONS
+========================= */
+#solutions .bg-card {
+  position: relative;
+  overflow: hidden;
+}
+
+#solutions .bg-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    400px 200px at top left,
+    rgba(106,44,255,0.15),
+    transparent
+  );
+  opacity: 0;
+  transition: var(--transition);
+}
+
+#solutions .bg-card:hover::before {
+  opacity: 1;
+}
+
+/* =========================
+   PROJECTS
+========================= */
+#projects img {
+  transition: transform 0.6s ease;
+}
+
+#projects a:hover img {
+  transform: scale(1.05);
+}
+
+/* =========================
+   PRICING
+========================= */
+#pricing .bg-violet {
+  box-shadow: 0 50px 120px rgba(106,44,255,0.5);
+}
+
+/* =========================
+   CTA
+========================= */
+#cta {
+  background:
+    radial-gradient(600px 300px at 50% 0%, rgba(106,44,255,0.2), transparent),
+    var(--bg-main);
+}
+
+/* =========================
+   CONTACT
+========================= */
+#contact a {
+  box-shadow: 0 20px 60px rgba(106,44,255,0.35);
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+  border-top: 1px solid rgba(255,255,255,0.05);
+}
+
+/* =========================
+   CTA BUTTONS
+========================= */
+.cta-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 14px 32px;
+  min-height: 48px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 1rem;
+  background: #0b0b12;
+  border: 1px solid rgba(255,255,255,.1);
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-btn::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle, rgba(255,255,255,.15), transparent 70%);
+  opacity: 0;
+  transition: opacity .3s ease;
+}
+
+.cta-btn:hover::after {
+  opacity: 1;
+}
+
+.cta-btn:hover {
+  transform: translateY(-2px);
+}
+
+.cta-btn.whatsapp:hover {
+  box-shadow: 0 0 30px rgba(37, 211, 102, .45);
+}
+
+.cta-btn.gmail:hover {
+  box-shadow: 0 0 30px rgba(234, 67, 53, .45);
+}
+
+/* =========================
+   LOADER
+========================= */
+#loader {
+  position: fixed;
+  inset: 0;
+  background: #0b0b12;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.loader-inner span {
+  font-size: 3rem;
+  font-weight: 900;
+  letter-spacing: 0.2em;
+  color: #6a2cff;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+  .nav-links {
+    position: fixed;
+    top: 72px;
+    inset-inline: 0;
+    flex-direction: column;
+    background: rgba(11,11,18,0.95);
+    backdrop-filter: blur(20px);
+    padding: 2rem;
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
+@media (max-width: 360px) {
+  .cta-btn {
+    width: 100%;
+  }
+}
