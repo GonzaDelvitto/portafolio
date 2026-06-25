@@ -66,8 +66,8 @@
     "description": "Opciones flexibles según el tipo de proyecto. Los valores pueden ajustarse según necesidades específicas.",
     "plans": [
       {
-        "name": "Landing Básica",
-        "price": "Desde USD 120",
+        "name": "Landing Page",
+        "price": "Consultar",
         "features": [
           "Diseño moderno",
           "Estructura enfocada en conversiones",
@@ -78,7 +78,7 @@
       },
       {
         "name": "Web Corporativa",
-        "price": "Desde USD 200",
+        "price": "Consultar",
         "features": [
           "Diseño personalizado",
           "Secciones estratégicas",
@@ -89,7 +89,7 @@
       },
       {
         "name": "Web de Conversión Premium",
-        "price": "Desde USD 350",
+        "price": "Consultar",
         "features": [
           "Diseño UX estratégico",
           "Copywriting orientado a ventas",
